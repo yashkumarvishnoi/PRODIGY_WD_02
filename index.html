@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <img src="pics/hand finger sports stopwatch, speed.jpeg" alt=""> -->
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div class="time">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+        <div class="buttons">
+            <button id="startBtn">Start</button>
+            <button id="lapBtn">Lap</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div class="laps">
+            <h2>Laps</h2>
+            <ul id="lapsList"></ul>
+        </div>
+    </div>
+    <div id="helpPopup" class="help-popup">
+        <h3>Keyboard Shortcuts</h3>
+        <ul>
+            <li>Space: Start/Pause</li>
+            <li>Enter: Lap</li>
+            <li>Esc: Reset</li>
+        </ul>
+        <button id="closePopupBtn" class="close-btn">X</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
